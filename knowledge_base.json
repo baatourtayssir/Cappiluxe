@@ -1,0 +1,188 @@
+{
+  "rules": [
+    {
+      "if": ["cheveux_secs", "cheveux_deshydrates"],
+      "then": ["HydraBalance Shampoo"]
+    },
+    {
+      "if": ["cheveux_secs", "cheveux_fragiles", "cheveux_abimes"],
+      "then": ["VelvetTouch Mask"]
+    },
+    {
+      "if": ["cheveux_ternes","manque_brillance"],
+      "then": ["LuxeShine Conditioner"]
+    },
+    {
+      "if": ["cheveux_longs", "besoin_croissance"],
+      "then": ["DreamLong Shampoo"]
+    },
+    {
+      "if": ["cheveux_fins", "manque_volume"],
+      "then": ["VolumeBoost Shampoo"]
+    },
+    {
+      "if": ["cheveux_lisses", "cheveux_abimes"],
+      "then": ["SmoothRepair Conditioner"]
+    },
+    {
+      "if": ["cheveux_secs", "cheveux_ternes"],
+      "then": ["PureEssence Oil"]
+    },
+    {
+      "if": ["cheveux_tres_secs", "cheveux_abimes"],
+      "then": ["NourishBliss Shampoo"]
+    },
+    {
+      "if": ["cheveux_frises", "cheveux_rugueux"],
+      "then": ["SilkySmooth Conditioner"]
+    },
+    {
+      "if": ["cheveux_indisciplines", "problemes_frizz"],
+      "then": ["AntiFrizz Serum"]
+    },
+    {
+      "if": ["cheveux_abimes", "besoin_reparation"],
+      "then": ["Repair & Restore Mask"]
+    },
+    {
+      "if": ["cheveux_abimes", "besoin_hydratation"],
+      "then": ["Repair & Restore Mask"]
+    },
+    {
+      "if": ["cheveux_boucles", "besoin_definition"],
+      "then": ["CurlDefiner Cream"]
+    },
+    {
+      "if": ["exposition_soleil", "protection_uv"],
+      "then": ["SunShield Shampoo"]
+    },
+    {
+      "if": ["cheveux_colores", "protection_couleur"],
+      "then": ["ColorCare Conditioner"]
+    },
+    {
+      "if": ["cuir_chevelu_sensible", "démangeaisons"],
+      "then": ["FreshBalance Shampoo"]
+    },
+    {
+      "if": ["cheveux_ternes", "manque_brillance"],
+      "then": ["UltraShine Serum"]
+    },
+    {
+      "if": ["cuir_chevelu_irrite", "démangeaisons"],
+      "then": ["ScalpCare Shampoo"]
+    },
+    {
+      "if": ["cheveux_fatigues", "cheveux_deshydrates"],
+      "then": ["ReviveCondition Mask"]
+    },
+    {
+      "if": ["cheveux_gras", "besoin_purification"],
+      "then": ["DetoxCleansing Shampoo"]
+    },
+    {
+      "if": ["cheveux_fins", "besoin_volume"],
+      "then": ["VolumeLift Shampoo"]
+    },
+    {
+      "if": ["cheveux_abimes", "cheveux_ternes"],
+      "then": ["KeratinRepair Mask"]
+    },
+    {
+      "if": ["cheveux_normaux", "usage_quotidien"],
+      "then": ["DailyCare Shampoo"]
+    },
+    {
+      "if": ["cheveux_ternes", "besoin_brillance"],
+      "then": ["ShineBoost Conditioner"]
+    },
+    {
+      "if": ["cheveux_fins", "chute_cheveux"],
+      "then": ["AntiHairFall Shampoo"]
+    },
+    {
+      "if": ["cheveux_abimes", "pointes_fourchues"],
+      "then": ["DeepRepair Serum"]
+    },
+    {
+      "if": ["cuir_chevelu_fatigue", "démangeaisons"],
+      "then": ["ScalpRevive Shampoo"]
+    },
+    {
+      "if": ["cheveux_fins", "manque_volume"],
+      "then": ["UltraVolume Shampoo"]
+    },
+    {
+      "if": ["cheveux_fragiles", "perte_cheveux"],
+      "then": ["HairStrength Mask"]
+    },
+    {
+      "if": ["cheveux_abimes", "besoin_reparation"],
+      "then": ["RepairTherapy Shampoo"]
+    },
+    {
+      "if": ["cheveux_normaux", "besoin_hydratation"],
+      "then": ["GentleMoisture Conditioner"]
+    }
+  ],
+  "facts": [
+    "cheveux_secs",
+    "cheveux_abimes",
+    "cheveux_fragiles",
+    "cheveux_normaux",
+    "cuir_chevelu_sensible",
+    "cuir_chevelu_seche",
+    "cuir_chevelu_irrite",
+    "cheveux_gras",
+    "cuir_chevelu_gras",
+    "besoin_hydratation_profonde",
+    "besoin_volume",
+    "cheveux_fins",
+    "cheveux_plats",
+    "manque_volume",
+    "cheveux_rêches",
+    "cheveux_frises",
+    "cheveux_boucles",
+    "cheveux_epais",
+    "cheveux_teints",
+    "manque_brillance",
+    "pointes_fourchues",
+    "cheveux_cassants",
+    "perte_cheveux",
+    "utilisation_frequent_chaleur",
+    "demangeaisons",
+    "pellicules",
+    "cheveux_deshydrates",
+    "cheveux_ternes",
+    "HydraBalance Shampoo",
+    "VelvetTouch Mask",
+    "LuxeShine Conditioner",
+    "DreamLong Shampoo",
+    "PureEssence Oil",
+    "NourishBliss Shampoo",
+    "SilkySmooth Conditioner",
+    "AntiFrizz Serum",
+    "Repair & Restore Mask",
+    "VolumeBoost Shampoo",
+    "CurlDefiner Cream",
+    "SunShield Shampoo",
+    "ColorCare Conditioner",
+    "FreshBalance Shampoo",
+    "UltraShine Serum",
+    "ScalpCare Shampoo",
+    "ReviveCondition Mask",
+    "DetoxCleansing Shampoo",
+    "VolumeLift Shampoo",
+    "KeratinRepair Mask",
+    "DailyCare Shampoo",
+    "ShineBoost Conditioner",
+    "AntiHairFall Shampoo",
+    "DeepRepair Serum",
+    "ScalpRevive Shampoo",
+    "SmoothRepair Conditioner",
+    "UltraVolume Shampoo",
+    "HairStrength Mask",
+    "RepairTherapy Shampoo",
+    "GentleMoisture Conditioner"
+  ]
+}

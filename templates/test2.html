@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soins Capillaires</title>
+
+    
+<!--
+Template 2110 Character
+http://www.tooplate.com/view/2110-character
+-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="../static/css/all.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="../static/css/tooplate-style.css">
+</head>
+
+<body class="tm-bg-dark">
+    <main class="tm-container masonry">
+        <div class="item tm-bg-white tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+            <p class="tm-hero-text">&ldquo;Découvrez le produit qui transformera vos cheveux ! Suivez-nous pour trouver la solution parfaite à vos besoins capillaires.&rdquo;</p>
+            <header class="tm-block-brand">
+                <div class="tm-bg-primary-dark tm-text-white tm-block-brand-inner">
+                    <i class="fas fa-braille fa-3x"></i>
+                    <h1 class="tm-brand-name">CAPILLUXE</h1>
+                </div>
+            </header>
+        </div>
+        <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
+            <img src="../static/img/image-01.jpeg" alt="Image" class="tm-img-left">
+        </div>
+        <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
+            data-mobile-seq-no="5">
+            <i class="fas fa-award fa-4x tm-block-icon"></i>
+            <H3>Essayez notre système expert dès maintenant !</H3>
+            <p> Vous hésitez encore ? Testez notre système expert intégré et découvrez les produits qui feront la différence pour vos cheveux. Résultats instantanés après soumission.</p>
+            <div class="tm-text-right">
+              
+            </div>
+        </div>
+        <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
+            <img src="../static/img/image-04.jpeg" alt="Image" class="tm-img-left">
+        </div>
+        <div class="tm-footer" id="tmFooter" data-desktop-seq-no="5" data-mobile-seq-no="9">
+           
+            <div>
+
+
+            </div>
+        </div>
+        <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
+            <img src="../static/img/image-02.jpeg" alt="Image">
+        </div>
+        <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
+            <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
+                <header>
+                    <h2 class="tm-text-uppercase">
+                        Pourquoi choisir Capilluxe ?
+                    </h2>
+                </header>
+                <p>Personnalisation complète : Chaque produit recommandé est adapté à vos besoins spécifiques.</p>
+                <p class="tm-mt tm-mb-small">Qualité premium : Nos formules sont enrichies en ingrédients naturels pour nourrir et protéger vos cheveux.
+                </p>
+                <p>Innovation technologique : Notre outil de diagnostic utilise des algorithmes avancés pour des recommandations précises.</p>
+
+                <!-- -->
+            </div>
+        </div>
+
+        <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
+            <img src="../static/img/image-03.jpeg" alt="Image">
+        </div>
+
+        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+            <div class="tm-form-container tm-block-pad tm-pb-0">
+                <header>
+                    <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">
+                        Trouvez Votre Soin Parfait : 
+                    </h2>
+                </header>
+                <!-- <form action="index.html" class="tm-contact-form" method="POST">
+                    <div class="tm-form-group">
+                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required/>
+                    </div>
+                    <div class="tm-form-group">
+                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required/>
+                    </div>
+                    <div class="tm-form-group">
+                        <textarea rows="5" id="contact_message" name="contact_message" class="form-control" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="tm-text-right">
+                        <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big">Send</button>
+                    </div>
+                </form> -->
+                <form id="expertForm">
+                    <fieldset>
+                        <!-- Étape 1 : Types de cheveux -->
+                        <div id="step-1" class="step">
+                            <h3>Choisir le type des cheveux</h3>
+                
+                            <!-- Par Texture -->
+                            <h4>Texture des cheveux</h4>
+                            <label><input type="checkbox" name="facts" value="cheveux_lisses"> Cheveux lisses</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_boucles"> Cheveux bouclés</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_frises"> Cheveux frisés</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_rugueux"> Cheveux rugueux</label><br>
+                            <br>
+                            <button type="button" id="next-step-1" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                             </div>
+                
+                            <!-- Par État des Cheveux -->
+                        <div id="step-2" class="step" style="display:none;">
+                            <h4>État des cheveux</h4>
+                            <label><input type="checkbox" name="facts" value="cheveux_secs"> Cheveux secs</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_tres_secs"> Cheveux très secs</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_gras"> Cheveux gras</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_normaux"> Cheveux normaux</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_deshydrates"> Cheveux déshydratés</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_abimes"> Cheveux abîmés</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_fragiles"> Cheveux fragiles</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_ternes"> Cheveux ternes</label><br>
+                            <br>
+                            <button type="button" id="next-step-2" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                          </div>
+                
+                            <!-- Par Épaisseur et Longueur -->
+                        <div id="step-3" class="step">
+                            <h4>Épaisseur et longueur des cheveux</h4>
+                            <label><input type="checkbox" name="facts" value="cheveux_fins"> Cheveux fins</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_epais"> Cheveux épais</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_longs"> Cheveux longs</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_courts"> Cheveux courts</label><br>
+                            <br>
+                            <button type="button" id="next-step-3" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                          </div>
+
+                            <!-- Par Condition Spéciale -->
+                        <div id="step-4" class="step">
+                            <h4>Conditions spéciales</h4>
+                            <label><input type="checkbox" name="facts" value="cheveux_teints"> Cheveux teints</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_colores"> Cheveux colorés</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_indisciplines"> Cheveux indisciplinés</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_plats"> Cheveux plats</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_volumineux"> Cheveux volumineux</label><br>
+                            <br>
+                            <button type="button" id="next-step-4" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                         </div>
+                
+                        <!-- Étape 2 : Problèmes spécifiques -->
+                        
+
+                        <div id="step-5" class="step" style="display:none;">
+                            <!-- <h3>Problèmes spécifiques</h3>  -->
+                            <!-- Problèmes du Cuir Chevelu -->
+                            <h4>Problèmes du cuir chevelu</h4>
+                            <label><input type="checkbox" name="facts" value="cuir_chevelu_sensible"> Cuir chevelu sensible</label><br>
+                            <label><input type="checkbox" name="facts" value="cuir_chevelu_gras"> Cuir chevelu gras</label><br>
+                            <label><input type="checkbox" name="facts" value="cuir_chevelu_seche"> Cuir chevelu sec</label><br>
+                            <label><input type="checkbox" name="facts" value="cuir_chevelu_irrite"> Cuir chevelu irrité</label><br>
+                            <label><input type="checkbox" name="facts" value="cuir_chevelu_fatigue"> Cuir chevelu fatigué</label><br>
+                            <br>
+                            <button type="button" id="next-step-5" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                        </div>  
+                            <!-- Problèmes Capillaires Généraux -->
+
+                        <div id="step-6" class="step">
+                            <h4>Problèmes capillaires généraux</h4>
+                            <label><input type="checkbox" name="facts" value="demangeaisons"> Démangeaisons</label><br>
+                            <label><input type="checkbox" name="facts" value="pellicules"> Pellicules</label><br>
+                            <label><input type="checkbox" name="facts" value="chute_cheveux"> Chute de cheveux</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_fatigue"> Cheveux fatigués</label><br>
+                            <br>
+                            <button type="button" id="next-step-6" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                         </div>  
+                            <!-- Problèmes d'Hydratation et de Brillance -->
+                        <div id="step-7" class="step">
+                            <h4>Problèmes d'hydratation et de brillance</h4>
+                            <label><input type="checkbox" name="facts" value="cheveux_deshydrates"> Cheveux déshydratés</label><br>
+                            <label><input type="checkbox" name="facts" value="manque_brillance"> Manque de brillance</label><br>
+                            <label><input type="checkbox" name="facts" value="pointes_fourchues"> Pointes fourchues</label><br>
+                            <label><input type="checkbox" name="facts" value="cheveux_ternes"> Cheveux ternes</label><br>
+                            <br>
+                            <button type="button" id="next-step-7" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                          </div>  
+                            <!-- Problèmes d'Exposition et de Frizz -->
+                        <div id="step-8" class="step">
+                            <h4>Problèmes d'exposition et de frizz</h4>
+                            <label><input type="checkbox" name="facts" value="problemes_frizz"> Frizz</label><br>
+                            <label><input type="checkbox" name="facts" value="exposition_soleil"> Exposition au soleil</label><br>
+                             <br>
+                            <button type="button" id="next-step-8" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                        </div>     
+                        <!-- Étape 3 : Besoins spécifiques -->
+                        <!-- <h3>Besoins spécifiques</h3> -->
+
+                        <!-- Besoins en Hydratation -->
+                        <div id="step-9" class="step" style="display:none;">      
+                            <h4>Besoins en hydratation</h4>
+                            <label><input type="checkbox" name="facts" value="besoin_hydratation_profonde"> Besoin d'hydratation profonde</label><br>
+                            <label><input type="checkbox" name="facts" value="besoin_hydratation"> Besoin d'hydratation</label><br>
+                            <br>
+                            <button type="button" id="next-step-9" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                       </div>   
+                            <!-- Besoins en Réparation et Croissance -->
+                        <div id="step-10" class="step" > 
+                            <h4>Besoins en réparation et croissance</h4>
+                            <label><input type="checkbox" name="facts" value="besoin_reparation"> Besoin de réparation</label><br>
+                            <label><input type="checkbox" name="facts" value="besoin_croissance"> Besoin de croissance</label><br>
+                            <br>
+                            <button type="button" id="next-step-10" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                         </div> 
+                            <!-- Besoins en Volume et Texture -->
+                        <div id="step-11" class="step" > 
+                            <h4>Besoins en volume et texture</h4>
+                            <label><input type="checkbox" name="facts" value="manque_volume"> Manque de volume</label><br>
+                            <label><input type="checkbox" name="facts" value="pointes_fourchues"> Pointes fourchues</label><br>
+                            <label><input type="checkbox" name="facts" value="besoin_definition"> Besoin de définition (cheveux bouclés)</label><br>
+                            <br>
+                            <button type="button" id="next-step-11" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                         </div> 
+                            <!-- Besoins en Protection -->
+                        <div id="step-12" class="step" > 
+                            <h4>Besoins en protection</h4>
+                            <label><input type="checkbox" name="facts" value="protection_couleur"> Protection de la couleur</label><br>
+                            <label><input type="checkbox" name="facts" value="protection_uv"> Protection UV</label><br>
+                            <br>
+                            <button type="button" id="next-step-12" class="tm-btn tm-btn-secondary">Suivant</button>
+                            <br><br>
+                        </div> 
+                            <!-- Besoins en Purification et Usage -->
+                        <div id="step-13" class="step" > 
+                            <h4>Besoins en purification et usage quotidien</h4>
+                            <label><input type="checkbox" name="facts" value="besoin_purification"> Besoin de purification</label><br>
+                            <label><input type="checkbox" name="facts" value="usage_quotidien"> Usage quotidien</label><br>
+                            <br><br>
+                           
+                        </div>
+                    </fieldset>
+                    <br>
+                    <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big">Obtenir Recommandation</button>
+                </form>
+                
+                
+            
+            </div>
+
+            <section id="conclusion" >
+                <div class="tm-form-section-tag">
+                    <div class="tm-bg-secondary tm-text-white tm-block-pad tm-form-section-tag-inner">
+                        <header>
+                            <h3>Recommandation :</h3>
+                        </header>
+                        <p id="result" >
+                            Les résultats apparaîtront ici après soumission.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('expertForm');
+    const resultElement = document.getElementById('result');
+    
+    if (!resultElement) {
+        console.error("Élément avec l'ID 'result' introuvable !");
+        return;
+    }
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        resultElement.textContent = "Traitement en cours...";
+
+        const facts = Array.from(document.querySelectorAll('input[name="facts"]:checked'))
+            .map(input => input.value);
+
+        if (facts.length === 0) {
+            resultElement.textContent = "Veuillez sélectionner au moins un fait.";
+            return;
+        }
+
+        fetch('/inference', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ facts })
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Erreur réseau (${response.status})`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log("Données reçues :", data);
+
+                if (data.result && Array.isArray(data.result)) {
+                    resultElement.textContent = `Recommandation(s) : ${data.result.join(', ')}`;
+                    console.log("Texte inséré dans #result :", resultElement.textContent);
+                } else {
+                    resultElement.textContent = "Aucune recommandation trouvée.";
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+                resultElement.textContent = "Une erreur s'est produite lors de la récupération des recommandations.";
+            });
+    });
+});
+
+ </script> -->
+
+
+ <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('expertForm');
+    const resultElement = document.getElementById('result');
+    
+    if (!resultElement) {
+        console.error("Élément avec l'ID 'result' introuvable !");
+        return;
+    }
+
+    let currentStep = 1;
+    const steps = document.querySelectorAll('.step');
+    
+    function showStep(stepNumber) {
+        steps.forEach((step, index) => {
+            step.style.display = (index === stepNumber - 1) ? 'block' : 'none';
+        });
+    }
+
+    showStep(currentStep);
+
+    // Ajouter les événements pour chaque bouton "Suivant"
+    document.getElementById('next-step-1').addEventListener('click', function () {
+        currentStep = 2;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-2').addEventListener('click', function () {
+        currentStep = 3;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-3').addEventListener('click', function () {
+        currentStep = 4;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-4').addEventListener('click', function () {
+        currentStep = 5;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-5').addEventListener('click', function () {
+        currentStep = 6;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-6').addEventListener('click', function () {
+        currentStep = 7;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-7').addEventListener('click', function () {
+        currentStep = 8;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-8').addEventListener('click', function () {
+        currentStep = 9;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-9').addEventListener('click', function () {
+        currentStep = 10;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-10').addEventListener('click', function () {
+        currentStep = 11;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-11').addEventListener('click', function () {
+        currentStep = 12;
+        showStep(currentStep);
+    });
+
+    document.getElementById('next-step-12').addEventListener('click', function () {
+        currentStep = 13;
+        showStep(currentStep);
+    });
+
+    // Soumettre le formulaire pour obtenir des recommandations
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        resultElement.textContent = "Traitement en cours...";
+
+        const facts = Array.from(document.querySelectorAll('input[name="facts"]:checked'))
+            .map(input => input.value);
+
+        if (facts.length === 0) {
+            resultElement.textContent = "Veuillez sélectionner au moins un fait.";
+            return;
+        }
+
+        fetch('/inference', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ facts })
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Erreur réseau (${response.status})`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log("Données reçues :", data);
+
+                if (data.result && Array.isArray(data.result)) {
+                    resultElement.textContent = `Recommandation(s) : ${data.result.join(', ')}`;
+                    console.log("Texte inséré dans #result :", resultElement.textContent);
+                } else {
+                    resultElement.textContent = "Aucune recommandation trouvée.";
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+                resultElement.textContent = "Une erreur s'est produite lors de la récupération des recommandations.";
+            });
+    });
+});
+
+ </script>
+
+</body>
+
+</html>

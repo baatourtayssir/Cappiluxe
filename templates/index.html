@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système Expert - Soins Capillaires</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Système Expert - Soins Capillaires</h1>
+        <p>Identifiez vos problèmes capillaires et obtenez des recommandations adaptées à vos besoins.</p>
+    </header>
+
+    <main>
+        <form id="expertForm">
+            <fieldset>
+                <legend>Quels sont vos problèmes capillaires ?</legend>
+
+                <!-- Types de cheveux -->
+                <div class="category">
+                    <h3>Types de cheveux</h3>
+                    <label><input type="checkbox" name="facts" value="cheveux_secs"> Cheveux secs</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_gras"> Cheveux gras</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_tres_secs"> Cheveux très secs</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_normaux"> Cheveux normaux</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_boucles"> Cheveux bouclés</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_frises"> Cheveux frisés</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_plats"> Cheveux plats</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_fins"> Cheveux fins</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_epais"> Cheveux épais</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_teints"> Cheveux teints</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_abimes"> Cheveux abîmés</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_fragiles"> Cheveux fragiles</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_ternes"> cheveux ternes</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_longs"> cheveux longs</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_rugueux"> cheveux rugueux</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_indisciplines"> Cheveux indisciplines</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_colores"> Cheveux colores</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_lisses"> Cheveux lisses</label><br>
+
+
+                </div>
+
+                <!-- Problèmes spécifiques -->
+                <div class="category">
+                    <h3>Problèmes spécifiques</h3>
+                    <label><input type="checkbox" name="facts" value="cuir_chevelu_sensible"> Cuir chevelu sensible</label><br>
+                    <label><input type="checkbox" name="facts" value="cuir_chevelu_gras"> Cuir chevelu gras</label><br>
+                    <label><input type="checkbox" name="facts" value="cuir_chevelu_seche"> Cuir chevelu sec</label><br>
+                    <label><input type="checkbox" name="facts" value="démangeaisons"> Démangeaisons</label><br>
+                    <label><input type="checkbox" name="facts" value="pellicules"> Pellicules</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_deshydrates"> Cheveux deshydrates</label><br>
+                    <label><input type="checkbox" name="facts" value="manque_brillance"> Manque brillance</label><br>
+                    <label><input type="checkbox" name="facts" value="problemes_frizz"> Frizz</label><br>
+                    <label><input type="checkbox" name="facts" value="exposition_soleil"> Exposition soleil</label><br>
+                    <label><input type="checkbox" name="facts" value="cuir_chevelu_irrite"> Cuir chevelu irrite</label><br>
+                    <label><input type="checkbox" name="facts" value="cheveux_fatigues"> Cheveux fatigues</label><br>
+                    <label><input type="checkbox" name="facts" value="chute_cheveux"> Chute cheveux</label><br>
+                    <label><input type="checkbox" name="facts" value="cuir_chevelu_fatigue"> Cuir chevelu fatigue</label><br>
+
+                </div>
+
+                <!-- Besoins spécifiques -->
+                <div class="category">
+                    <h3>Besoins spécifiques</h3>
+                    <label><input type="checkbox" name="facts" value="besoin_hydratation_profonde"> Besoin d'hydratation profonde</label><br>
+                    <label><input type="checkbox" name="facts" value="besoin_hydratation"> Besoin d'hydratation </label><br>
+                    <label><input type="checkbox" name="facts" value="perte_cheveux"> Perte de cheveux</label><br>
+                    <label><input type="checkbox" name="facts" value="pointes_fourchues"> Pointes fourchues</label><br>
+                    <label><input type="checkbox" name="facts" value="manque_volume"> Manque de volume</label><br>
+                    <label><input type="checkbox" name="facts" value="utilisation_frequent_chaleur"> Utilisation fréquente de chaleur</label><br>
+                    <label><input type="checkbox" name="facts" value="besoin_definition"> Besoin de définition (cheveux bouclés)</label><br>
+                    <label><input type="checkbox" name="facts" value="besoin_reparation"> Besoin de réparation</label><br>
+                    <label><input type="checkbox" name="facts" value="besoin_croissance"> Besoin de croissance</label><br>
+                    <label><input type="checkbox" name="facts" value="protection_couleur"> Protection de la couleur</label><br>
+                    <label><input type="checkbox" name="facts" value="protection_uv"> Protection UV</label><br>
+                    <label><input type="checkbox" name="facts" value="besoin_purification"> Besoin purification</label><br>
+                    <label><input type="checkbox" name="facts" value="usage_quotidien"> Usage quotidien</label><br>
+                </div>
+            </fieldset>
+
+            <button type="submit">Obtenir Recommandation</button>
+        </form>
+        
+        <section id="conclusion" style="margin-top: 20px;">
+            <h3>Recommandation :</h3>
+            <p id="result" style="font-weight: bold; color: #333;">
+                Les résultats apparaîtront ici après soumission.
+            </p>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('expertForm');
+    const resultElement = document.getElementById('result');
+    
+    if (!resultElement) {
+        console.error("Élément avec l'ID 'result' introuvable !");
+        return;
+    }
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        resultElement.textContent = "Traitement en cours...";
+
+        const facts = Array.from(document.querySelectorAll('input[name="facts"]:checked'))
+            .map(input => input.value);
+
+        if (facts.length === 0) {
+            resultElement.textContent = "Veuillez sélectionner au moins un fait.";
+            return;
+        }
+
+        fetch('/inference', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ facts })
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Erreur réseau (${response.status})`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log("Données reçues :", data);
+
+                if (data.result && Array.isArray(data.result)) {
+                    resultElement.textContent = `Recommandation(s) : ${data.result.join(', ')}`;
+                    console.log("Texte inséré dans #result :", resultElement.textContent);
+                } else {
+                    resultElement.textContent = "Aucune recommandation trouvée.";
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+                resultElement.textContent = "Une erreur s'est produite lors de la récupération des recommandations.";
+            });
+    });
+});
+
+ </script>
+ <script src="script.js"></script>
+
+    
+</body>
+</html>
