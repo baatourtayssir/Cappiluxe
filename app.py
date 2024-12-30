@@ -34,7 +34,51 @@ def inference(facts, rules):
 # Route principale
 @app.route('/')
 def index():
-    return render_template('test.html')
+    return render_template('index.html')
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+@app.route('/addProduct')
+def addProduct():
+    return render_template('addProduct.html')
+
+@app.route('/addOrder')
+def addOrder():
+    return render_template('addOrder.html')
+
+@app.route('/order')
+def order():
+    return render_template('order.html')
+
+@app.route('/product')
+def product():
+    return render_template('product.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/signUp')
+def sign_up():
+    return render_template('signUp.html')
+
+@app.route('/addAgent')
+def addAgent():
+    return render_template('addAgent.html')
+
+@app.route('/agent')
+def agent():
+    return render_template('agent.html')
+@app.route('/addClient')
+def addClient():
+    return render_template('addClient.html')
+
+@app.route('/client')
+def client():
+    return render_template('client.html')
+
 
 # Route pour soumettre des faits et obtenir une conclusion
 @app.route('/inference', methods=['POST'])
